@@ -14,5 +14,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "jquery-rss": "^3.2.1",
+    "topcoat": "^0.8.0"
+  }
 }
