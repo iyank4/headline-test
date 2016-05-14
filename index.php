@@ -95,7 +95,7 @@
     </div>
 
     <div id="panel3" class="ht-body" style="display:none">
-      <div id="result-score"></div>
+      <p class="ht-center">Your Score: <span id="result-score"></span></p>
     </div>
   </div>
 
@@ -106,7 +106,7 @@
   <script type="text/javascript" src="js/jquery.rss.min.js"></script>
 
   <script type="text/javascript">
-    var numTitle = 5;
+    var numTitle = 10;
     var posTitle = 0;
     var cntMax = 15;
     var cntNow = 15;
@@ -183,11 +183,13 @@
       } else {
         // finish
         window.clearInterval(testTimer);
-        $("#result-score").text(myPoint);
-
         $("#panel1").hide();
         $("#panel2").hide();
         $("#panel3").show();
+
+        // calculate score
+        var score = ((myPoint / numTitle) * 100);
+        $("#result-score").text(score + "%");
       }
     }
 
