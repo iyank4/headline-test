@@ -39,6 +39,10 @@
     select {
       font-size: 2em;
     }
+    #result-score {
+      font-weight: bold;
+      font-size: 3em;
+    }
   </style>
 </head>
 <body>
@@ -95,7 +99,11 @@
     </div>
 
     <div id="panel3" class="ht-body" style="display:none">
-      <p class="ht-center">Your Score: <span id="result-score"></span></p>
+      <p class="ht-center">Your Score: <br><span id="result-score">100%</span></p>
+      <br>
+      <p><i>Some fun message and eye-catching image describe the result, encoure user to share this result. (shared with the link to the test.)</i></p>
+      <br>
+      <p class="ht-center">Share button to FB, Twitter, etc</p>
     </div>
   </div>
 
